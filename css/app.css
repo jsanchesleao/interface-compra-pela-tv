@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  padding: 0 0 5px 0;
+}
+
+.app-header {
+  background-color: #ff9c5a;
+  color: white;
+}
+
+.app-header h1 {
+  font-size: 1em;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+.app-content {
+  flex: 1;
+  position: relative;
+}
+
+.home {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-scanButton {
+  font-size: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: .5em;
+}
+
+.home-scanButton button {
+  margin: 5em 0;
+}
+
+.home-otherPromosButton{
+  justify-self: flex-end;
+}
+
+.app-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: .5em 0;
+}
+
+.form-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-size: 20px;
+  padding: 0 0.5em;
+  margin-top: 1em;
+}
+
+.form-controlLabel {
+  font-size: .6em;
+  margin-left: .5em;
+  color: #999;
+}
+
+.form-controlInput {
+  font-size: 14px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ff9c5a;
+  width: 100%;
+  margin-bottom: 0.2em;
+}
+
+.form-controlInput::placeholder {
+  opacity: 0.3;
+}
+
+.form-controlAddIn {
+  font-size: 0.5em;
+  color: #666;
+}
+
+.form-control.--medium {
+  width: 65%;
+}
+
+.form-control.--small {
+  width: 30%;
+}
+
+.form-control.--half {
+  width: 45%;
+}
+
+
+.--maximized {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.btn {
+  padding: 1em 2em;
+  background: none;
+  outline: none;
+  border: none;
+  margin: 2px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #ff9c5a;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  border: 1px solid #ff9c5a;
+  color: #ff9c5a;
+}

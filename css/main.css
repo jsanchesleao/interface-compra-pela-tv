@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 800px;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-navbar {
+  position: fixed;
+  width: 236px;
+  background-color: green;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  padding: 32px 32px 0 32px;;
+}
+
+.main-navbar h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 30px 0;
+}
+
+.main-navbar ul {
+  list-style: none;
+}
+
+.main-navbar a {
+  font-size: 22px;
+  font-family: arial;
+  color: white;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.main-navbar a::before {
+  content: "📕";
+  margin-right: 0.5em;
+}
+
+.main-navbar a:focus::before {
+  content: "📖";
+}
+
+.app-container {
+  width: 401px;
+  height: 600px;
+  position: absolute;
+  top: 32px;
+  left: 210px;
+  border: none;
+}
+
+.phone-frame {
+  background-image: url('/assets/frame.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.app-content {
+  width: 223px;
+  height: 442px;
+  position: absolute;
+  top: 26px;
+  left: 55px;
+  border: none;
+}
