@@ -66,6 +66,10 @@
   justify-content: center;
 }
 
+.app-actions button {
+  flex: 1;
+}
+
 .form {
   display: flex;
   flex-direction: row;
@@ -122,6 +126,232 @@
   width: 45%;
 }
 
+.camera-mockup {
+  position: absolute;
+  border: 2px solid black;
+  top: 5vh;
+  width: 100vw;
+  height: 130vw;
+  background-image: url(../assets/qrcode.png);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.scanner {
+  width: 80vw;
+  height: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scanner-border {
+  position: absolute;
+  border: 3px solid #ff9c5a;
+  width: 30vw;
+  height: 30vw;
+}
+
+.scanner-border.--topLeft {
+  top: 0;
+  left: 0;
+  border-bottom: none;
+  border-right: none;
+}
+
+.scanner-border.--topRight {
+  top: 0;
+  right: 0;
+  border-bottom: none;
+  border-left: none;
+}
+
+.scanner-border.--bottomLeft {
+  bottom: 0;
+  left: 0;
+  border-top: none;
+  border-right: none;
+}
+
+.scanner-border.--bottomRight {
+  bottom: 0;
+  right: 0;
+  border-top: none;
+  border-left: none;
+}
+
+.parabens {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+}
+
+.parabens-text {
+  font-size: 1.1em;
+  margin: 0.5em;
+}
+
+.parabens-order {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff9c5a;
+  text-align: center;
+}
+
+button.parabens-action {
+  margin: 2em .5em;
+}
+
+.offers-title {
+  font-size: 16px;
+  margin: 1em .2em 2em .2em;
+}
+
+.offers-productCarousel {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.offers-productDetails {
+  width: 1000vw;
+  list-style: none;
+}
+
+.offers-productBox {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 .5em;
+  padding: 0 0 .5em 0;
+  box-shadow: 0 0 2px black inset;
+  width: 120px;
+}
+
+.productBox-photo {
+  width: 70px;
+  height: 70px;
+  background-image: url(../assets/produto1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 3px;
+}
+
+.productBox-description {
+  font-size: .8em;
+  padding: 0 1em;
+}
+
+.productBox-price {
+  font-weight: bold;
+  color: #ff9c5a;
+}
+
+.offers-indexes {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  list-style: none;
+  margin: auto;
+}
+
+.offers-index {
+  width: 10vw;
+  height: 4vw;
+  border: 1px solid #ff9c5a;
+}
+
+.offers-index.--active {
+  background-color: #ff9c5a;
+}
+
+.cancelling-heading {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 2em;
+}
+
+.cancelling-text {
+  font-size: 1.1em;
+  margin: 0 1em;
+  text-align: center;
+}
+
+.sac {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.sac-text {
+  font-size: 1.1em;
+  margin: .5em;
+}
+
+.sac-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sac-phoneNumber {
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.modal-box {
+  position: absolute;
+  top: 3em;
+  bottom: 3em;
+  left: 1.2em;
+  right: 1.2em;
+  background-color: #fff;
+  box-shadow: 0 0 10px #333;
+  z-index: 3;
+}
+
+.modal-close::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.modal-close {
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  background-image: url(../assets/close.svg);
+  background-size: cover;
+  box-shadow: 0 0 8px gray;
+}
 
 .--maximized {
   position: absolute;
@@ -140,9 +370,15 @@
   text-transform: uppercase;
 }
 
+.btn-small {
+  padding: .1em .2em;
+  font-size: .8em;
+}
+
 .btn-primary {
   background-color: #ff9c5a;
   border: none;
+  color: #fff;
 }
 
 .btn-secondary {
