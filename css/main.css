@@ -78,3 +78,12 @@ body {
   left: 55px;
   border: none;
 }
+
+.app-content-background {
+  position: absolute;
+  top: 26px;
+  left: 55px;
+  width: 223px;
+  height: 442px;
+  background-color: #fff;
+}
